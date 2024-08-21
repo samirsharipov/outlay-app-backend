@@ -13,7 +13,7 @@ import sof.uz.outlay.enums.Role;
 import java.util.Collection;
 import java.util.List;
 
-@Entity
+@Entity(name = "users")
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
