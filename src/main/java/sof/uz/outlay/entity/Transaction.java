@@ -9,33 +9,32 @@ import java.sql.Timestamp;
 
 @EqualsAndHashCode(callSuper = true)
 @Entity
-@FieldDefaults(level = AccessLevel.PRIVATE)
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
 public class Transaction extends BasicEntity{
 
     @Column(nullable = false)
-    Double amount;
+    private Double amount;
 
-    String description;
+    private String description;
 
     @ManyToOne(optional = false)
     @JoinColumn(name = "user_id")
-    User user;
+    private User user;
 
     @ManyToOne(optional = false)
     @JoinColumn(name = "currency_id")
-    Currency currency;
+    private Currency currency;
 
     @Enumerated(EnumType.STRING)
-    TransactionType transactionType;
+    private TransactionType transactionType;
 
     @ManyToOne
     @JoinColumn(name = "contact_id")
-    Contact contact;
+    private Contact contact;
 
-    Timestamp deadline;
+    private Timestamp deadline;
 
 
 
