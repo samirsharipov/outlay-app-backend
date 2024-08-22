@@ -4,7 +4,6 @@
   <component name="GitLabDefaultAccount">
     <option name="defaultAccountId" value="ce123833-7f6c-4e99-953b-53274761309e" />
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_19" default="true" project-jdk-name="19" project-jdk-type="JavaSDK" />
   <component name="MavenProjectsManager">
     <option name="originalFiles">
       <list>
