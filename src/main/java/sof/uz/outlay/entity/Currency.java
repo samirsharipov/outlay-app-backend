@@ -8,6 +8,7 @@ import jakarta.persistence.Enumerated;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import sof.uz.outlay.entity.template.BasicEntity;
 import sof.uz.outlay.enums.Ccy;
 
 @NoArgsConstructor

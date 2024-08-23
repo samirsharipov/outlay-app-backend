@@ -2,7 +2,7 @@ package sof.uz.outlay.entity;
 
 import jakarta.persistence.*;
 import lombok.*;
-import lombok.experimental.FieldDefaults;
+import sof.uz.outlay.entity.template.BasicEntity;
 import sof.uz.outlay.enums.TransactionType;
 
 import java.sql.Timestamp;
@@ -12,7 +12,7 @@ import java.sql.Timestamp;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class Transaction extends BasicEntity{
+public class Transaction extends BasicEntity {
 
     @Column(nullable = false)
     private Double amount;

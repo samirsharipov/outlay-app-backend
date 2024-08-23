@@ -5,6 +5,7 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;
+import sof.uz.outlay.entity.template.BasicEntity;
 
 @Data
 @EqualsAndHashCode(callSuper = true)
@@ -13,7 +14,7 @@ import lombok.NoArgsConstructor;
 @Entity(name = "balance")
 @Table(name = "balance")
 
-public class Balance extends BasicEntity{
+public class Balance extends BasicEntity {
 
     @Column(name = "amount")
     private Double amount;

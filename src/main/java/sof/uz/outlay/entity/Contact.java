@@ -6,6 +6,7 @@ import jakarta.persistence.ManyToOne;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import sof.uz.outlay.entity.template.BasicEntity;
 
 @Entity(name = "contacts")
 @Data

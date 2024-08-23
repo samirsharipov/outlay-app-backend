@@ -1,4 +1,4 @@
-package sof.uz.outlay.entity;
+package sof.uz.outlay.entity.template;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
@@ -29,7 +29,5 @@ public abstract class BasicEntity implements Serializable {
 
     @UpdateTimestamp
     private Timestamp updatedAt;
-
-
 
 }

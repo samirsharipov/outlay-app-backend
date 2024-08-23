@@ -8,6 +8,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
+import sof.uz.outlay.entity.template.BasicEntity;
 import sof.uz.outlay.enums.Role;
 
 import java.util.Collection;
@@ -31,7 +32,7 @@ public class User extends BasicEntity implements UserDetails {
 
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {
-        return List.of();
+        return List.of(() -> role.name());
     }
 
     @Override
