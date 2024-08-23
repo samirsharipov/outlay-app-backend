@@ -11,6 +11,8 @@ import sof.uz.outlay.entity.template.BasicEntity;
 @NoArgsConstructor
 @AllArgsConstructor
 public class Message extends BasicEntity {
-    private Integer senderId;
-    private Integer qabulId;
+    private String text;
+    private User sender;
+    private User receiver;
+    private boolean read;
 }
