@@ -16,9 +16,6 @@ public class Notification extends BasicEntity {
 
     private String title;
     private String read;
-
-//    private Message message;
-
     @ManyToOne
     @JoinColumn(name = "user_id")
     private User user;
