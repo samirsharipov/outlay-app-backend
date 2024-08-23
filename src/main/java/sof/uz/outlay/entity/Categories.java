@@ -4,6 +4,7 @@ import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import sof.uz.outlay.entity.template.BasicEntity;
 
 import java.util.UUID;
 
@@ -11,19 +12,14 @@ import java.util.UUID;
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity
-public class Categories {
+public class Categories extends BasicEntity {
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
-    private UUID category_id;
+    private String name;
 
-    @Column(nullable = false)
-    private String category;
+    @ManyToOne(fetch = FetchType.LAZY,optional = false)
+    private Categories parentCategory;
 
     @ManyToOne(fetch = FetchType.LAZY)
-    private Categories parentCategory_id;
-
-    @ManyToOne(fetch = FetchType.LAZY)
-    private User user_id;
+    private User user;
 
 }

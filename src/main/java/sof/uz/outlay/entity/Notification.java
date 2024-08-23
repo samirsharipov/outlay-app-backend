@@ -15,8 +15,11 @@ import sof.uz.outlay.entity.template.BasicEntity;
 public class Notification extends BasicEntity {
 
     private String title;
-    private String read;
+
+    private String text;
+
     @ManyToOne
-    @JoinColumn(name = "user_id")
     private User user;
+
+    private boolean read = false;
 }

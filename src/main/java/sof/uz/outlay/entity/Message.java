@@ -13,9 +13,12 @@ import sof.uz.outlay.entity.template.BasicEntity;
 @AllArgsConstructor
 public class Message extends BasicEntity {
     private String text;
+
     @ManyToOne
-    private User sender;
+    private User sender; //sender_id
+
     @ManyToOne
     private User receiver;
-    private boolean read;
+
+    private boolean read = false;
 }

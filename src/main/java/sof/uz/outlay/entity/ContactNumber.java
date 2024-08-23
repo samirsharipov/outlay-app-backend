@@ -13,8 +13,9 @@ import sof.uz.outlay.entity.template.BasicEntity;
 @NoArgsConstructor
 @AllArgsConstructor
 public class ContactNumber extends BasicEntity {
+
     private String number;
+
     @ManyToOne
-    @JoinColumn(name = "contact_id")
     private Contact contact;
 }
