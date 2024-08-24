@@ -31,7 +31,4 @@ public class Transaction extends BasicEntity {
     private Contact contact;
 
     private Timestamp deadline;
-
-
-
 }

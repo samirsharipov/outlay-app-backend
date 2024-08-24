@@ -20,10 +20,10 @@ public class Currency extends BasicEntity {
 
     @JsonProperty("Ccy")
     @Enumerated(EnumType.STRING)
-    private Ccy usd;
+    private Ccy usd; //USD
 
     @JsonProperty("CcyNm_UZ")
-    private String ccyNmUz;
+    private String ccyNmUz; //AQSH DOLLARI
 
     @JsonProperty("CcyNm_RU")
     private String ccyNmRu;
@@ -32,5 +32,8 @@ public class Currency extends BasicEntity {
     private String ccyNumEn;
 
     @JsonProperty("Rate")
-    private Double rate;
+    private Double rate; //12550
+
+    //@schedule()
+
 }

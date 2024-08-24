@@ -30,4 +30,5 @@ public abstract class BasicEntity implements Serializable {
     @UpdateTimestamp
     private Timestamp updatedAt;
 
+    private boolean delete = false;
 }
