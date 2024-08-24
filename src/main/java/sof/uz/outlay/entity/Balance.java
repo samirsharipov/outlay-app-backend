@@ -20,7 +20,5 @@ public class Balance extends BasicEntity {
     private User user;
 
     @ManyToOne(optional = false)
-    private Currency currency;
-
-
+    private Currency currency; // DOLLAR / SOM
 }
